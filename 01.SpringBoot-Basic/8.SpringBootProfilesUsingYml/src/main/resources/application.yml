@@ -1,0 +1,31 @@
+my:
+  app:
+    name: Lenehan
+    role: Guard
+---
+#Configuration for dev profile
+#spring:
+#  config:
+#    activate:
+#      on-profile:
+#      - dev
+#      - pilot
+#  main:
+#    banner-mode: 'off'
+#my:
+#  app:
+#    name: David
+#    role: Executive
+---
+#Configuration for prod profile
+spring:
+  config:
+    activate:
+      on-profile: qa
+  main:
+    banner-mode: console
+my:
+  app:
+    name: Anya
+    role: Manager
+---

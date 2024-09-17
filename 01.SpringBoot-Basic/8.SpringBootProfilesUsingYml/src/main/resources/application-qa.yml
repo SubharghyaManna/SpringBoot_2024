@@ -1,0 +1,7 @@
+spring:
+  main:
+    banner-mode: 'off'
+my:
+  app:
+    name: Harisson
+    role: Desk-Officer
