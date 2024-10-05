@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: jdbc:mysql:///subharghya
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: admin
+    type: oracle.ucp.jdbc.PoolDataSourceImpl

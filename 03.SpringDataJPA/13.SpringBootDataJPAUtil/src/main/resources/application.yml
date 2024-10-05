@@ -1,0 +1,27 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+---
+spring:
+  config:
+    activate:
+      on-profile:
+        mysqltest
+  datasource:
+    url: jdbc:mysql:///sbms_2024
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: admin
+---
+spring:
+  config:
+    activate:
+      on-profile:
+        oracletest
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    driver-class-name: oracle.jdbc.OracleDriver
+    username: system
+    password: admin
